@@ -1,10 +1,10 @@
-[Project Blog](https://haoquanzhang.github.io/pixelbench/)
-
 # PixelBench
 
 **Can LLMs Understand and Generate Images Pixel by Pixel?**
 
 Haoquan Zhang · Feiyang Liu · Juanxi Tian · Wanhua Li · Haodong Duan · Weiyang Liu
+
+[Project Blog](https://haoquanzhang.github.io/pixelbench/)
 
 ![Pixel generation at 16, 32, and 64 pixels](assets/teaser.png)
 
