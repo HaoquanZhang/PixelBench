@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pixelbench"
+version = "0.1.0"
+description = "Pixel generation, pixel understanding, and pixel reconstruction tuning"
+requires-python = ">=3.11"
+dependencies = ["numpy>=1.26,<2", "Pillow>=11", "openai>=1.50"]
+
+[project.optional-dependencies]
+eval = ["torch>=2.6", "transformers>=4.57,<5", "sentencepiece"]
+baselines = ["scikit-image==0.26.0", "scikit-learn==1.2.2"]
+qwen = ["torch>=2.6", "transformers>=4.57,<5", "accelerate>=1.2", "deepspeed>=0.16"]
+test = ["pytest>=6"]
+
+[tool.setuptools.packages.find]
+include = ["pixelbench*", "training*"]

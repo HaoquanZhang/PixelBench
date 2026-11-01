@@ -1,0 +1,15 @@
+{
+  "molmo2": {
+    "MMVP": 150, "BlindTest": 3434, "V-STAR": 191, "BabyVision": 388,
+    "HallusionBench": 1129, "PerceptionBench": 3000, "CV-Bench": 2638,
+    "MMStar": 1500, "Q-Bench": 1495, "MMBench": 1292, "VLMs Are Biased": 2784,
+    "BLINK": 1901, "ColorBench": 955, "ColorBench-Robust": 493,
+    "ChartQA": 2500, "MathVista": 1000
+  },
+  "qwen": {
+    "MMVP": 150, "BlindTest": 3434, "V-STAR": 191, "BabyVision": 388,
+    "HallusionBench": 1129, "PerceptionBench": 3000, "CV-Bench": 2638,
+    "MMStar": 1500, "Q-Bench": 1495, "MMBench": 1292, "VLMs Are Biased": 2784,
+    "BLINK": 1901, "TallyQA": 3000
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "gpt6astra": {"temperature": 1.0, "max_tokens": 32768},
+  "gpt56sol": {"temperature": 1.0, "max_tokens": 32768, "reasoning_effort": "high"},
+  "opus5": {"temperature": 1.0, "max_tokens": 32768, "reasoning_effort": "high"},
+  "k3": {"temperature": 1.0, "max_tokens": 32768, "reasoning_effort": "high"},
+  "gemini36": {"temperature": 0.7, "max_tokens": 32768},
+  "seed21pro": {"temperature": 0.7, "max_tokens": 32768, "extra_body": {"max_reasoning_tokens": 2500}},
+  "deepseekv4": {"temperature": 0.7, "max_tokens": 32768}
+}

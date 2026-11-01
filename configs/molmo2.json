@@ -1,0 +1,45 @@
+{
+  "initialization": "Molmo2-4B-Pretrain/step32000",
+  "alignment_stage": false,
+  "data": {
+    "instruction_source": "mvp-lab/LLaVA-OneVision-1.5-Instruct-Data",
+    "instruction_rows": 500000,
+    "instruction_max_answer_tokens": 2048,
+    "image_long_side": 1024,
+    "pixel_source": "allenai/pixmo-cap",
+    "pixel_rows": 2000,
+    "pixel_pool_size": 20000,
+    "max_aspect_ratio": 1.33,
+    "recognition_encoder": "google/siglip2-base-patch16-224",
+    "keep_fraction": {"16": 0.4, "32": 0.8},
+    "resolutions": [16, 32],
+    "palette_colors": 8,
+    "pixel_teacher": "pia_reduced",
+    "unique_pixel_images": true,
+    "sampling_seed": 0,
+    "joint_shuffle": true
+  },
+  "synthesis": {"model": "gemini-3.8-flash", "temperature": 0.4, "thinking_budget": 2048, "attempts": 3},
+  "steps": {"0": 1190, "1000": 1194, "2000": 1198, "4000": 1206, "8000": 1222},
+  "seeds": {
+    "s0": {"train": 6198, "data": 50189},
+    "s1": {"train": 271828, "data": 314159},
+    "s2": {"train": 1729, "data": 424242},
+    "s3": {"train": 31337, "data": 777}
+  },
+  "quantity_seeds": {"0": ["s0", "s1", "s2", "s3"], "1000": ["s1", "s2"], "2000": ["s0", "s1", "s2", "s3"], "4000": ["s0", "s1"], "8000": ["s0", "s1"]},
+  "training": {
+    "global_train_batch_size": 128,
+    "sequence_length": 4096,
+    "max_answer_length": 1800,
+    "high_res_max_crops": 8,
+    "llm_learning_rate": 0.00001,
+    "vision_learning_rate": 0.000005,
+    "warmup_steps": 60,
+    "final_lr_multiplier": 0.1,
+    "gradient_clip": 1.0,
+    "precision": "amp_bf16",
+    "nodes": 4,
+    "gpus_per_node": 8
+  }
+}
