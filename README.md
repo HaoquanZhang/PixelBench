@@ -36,16 +36,9 @@ Use `--siglip`, `--dino`, and `--device cpu` to select local weights or CPU exec
 
 ## Models
 
-Checkpoints used in the paper's main comparisons are available on Hugging Face.
-Molmo2 includes all four matched seed pairs; Qwen includes the FineVision baseline
-and the mixed-resolution Pixel run at each model size.
-
-| Model | Instruction tuning | + Pixel |
-| --- | --- | --- |
-| Molmo2-4B | [s0](https://huggingface.co/haoquan03/PixelBench-Molmo2-4B-OV-s0) · [s1](https://huggingface.co/haoquan03/PixelBench-Molmo2-4B-OV-s1) · [s2](https://huggingface.co/haoquan03/PixelBench-Molmo2-4B-OV-s2) · [s3](https://huggingface.co/haoquan03/PixelBench-Molmo2-4B-OV-s3) | [s0](https://huggingface.co/haoquan03/PixelBench-Molmo2-4B-PRT-s0) · [s1](https://huggingface.co/haoquan03/PixelBench-Molmo2-4B-PRT-s1) · [s2](https://huggingface.co/haoquan03/PixelBench-Molmo2-4B-PRT-s2) · [s3](https://huggingface.co/haoquan03/PixelBench-Molmo2-4B-PRT-s3) |
-| Qwen3-VL-2B | [FV](https://huggingface.co/haoquan03/PixelBench-Qwen3-VL-2B-FV) | [PRT](https://huggingface.co/haoquan03/PixelBench-Qwen3-VL-2B-PRT) |
-| Qwen3-VL-4B | [FV](https://huggingface.co/haoquan03/PixelBench-Qwen3-VL-4B-FV) | [PRT](https://huggingface.co/haoquan03/PixelBench-Qwen3-VL-4B-PRT) |
-| Qwen3-VL-8B | [FV](https://huggingface.co/haoquan03/PixelBench-Qwen3-VL-8B-FV) | [PRT](https://huggingface.co/haoquan03/PixelBench-Qwen3-VL-8B-PRT) |
+The 14 checkpoints used in the paper's main comparisons are available in the
+[Pixel Reconstruction Tuning](https://huggingface.co/collections/haoquan03/pixel-reconstruction-tuning-6ae7775931cc30228f5ca2f8)
+collection on Hugging Face, including Molmo2 and Qwen3-VL PRT models and their baselines.
 
 ## Evaluate saved outputs
 
