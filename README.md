@@ -1,3 +1,5 @@
+[Project Blog](https://haoquanzhang.github.io/pixelbench/)
+
 # PixelBench
 
 **Can LLMs Understand and Generate Images Pixel by Pixel?**
