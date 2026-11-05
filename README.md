@@ -146,11 +146,11 @@ python -m pytest -q
 
 ```bibtex
 @article{zhang2026pixelbench,
-    title={Can {LLMs} Understand and Generate Images Pixel by Pixel?},
-    author={Haoquan Zhang and Feiyang Liu and Juanxi Tian and Wanhua Li and Haodong Duan and Weiyang Liu},
-    journal={arXiv preprint arXiv:TBA},
-    year={2026},
-    url={https://haoquanzhang.github.io/pixelbench/}
+    title = {{PixelBench}: Can {LLMs} Understand and Generate Images Pixel by Pixel?},
+    author = {Zhang, Haoquan and Liu, Feiyang and Tian, Juanxi and Li, Wanhua and Duan, Haodong and Liu, Weiyang},
+    journal = {arXiv preprint arXiv:2611.02540},
+    year = {2026},
+    url = {https://haoquanzhang.github.io/pixelbench/}
 }
 ```
 
