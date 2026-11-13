@@ -38,8 +38,7 @@ visual supervision for Molmo2 and Qwen3-VL.
 The benchmark data and saved predictions are included in `data/`. No dataset download
 or Git LFS is needed for PixelBench. Training corpora and model weights are separate.
 
-<details>
-<summary><strong>Explore benchmark results</strong> — generation, understanding, and resolution scaling</summary>
+## Benchmark results
 
 ### Text-to-pixel
 
@@ -62,8 +61,6 @@ individual 32² outputs. See the [evaluation protocol](EVALUATION.md) for metric
 
 The resolution sweep uses a separate 50-image subset. Explore the full interactive
 results on the [project page](https://haoquanzhang.github.io/pixelbench/).
-
-</details>
 
 ## Setup
 
