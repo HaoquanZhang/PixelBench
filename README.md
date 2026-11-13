@@ -1,4 +1,6 @@
-<h1 align="center">PixelBench</h1>
+<h1 align="center">
+  <img src="assets/pixelbench-logo.png" alt="PixelBench" width="340" height="58">
+</h1>
 
 <h3 align="center">Can LLMs Understand and Generate Images Pixel by Pixel?</h3>
 
@@ -25,6 +27,8 @@ A model produces a small RGB palette and a grid of palette indices; rendering is
 deterministic lookup. Pixel Reconstruction Tuning (PRT) uses this representation as
 visual supervision for Molmo2 and Qwen3-VL.
 
+![Compact pixel representation: a rendered mushroom, its small RGB palette, and the corresponding grid of palette indices](assets/representation.png)
+
 | Task | Input | Evaluation set | Main metrics |
 | --- | --- | --- | --- |
 | Text-to-pixel | Object label | 100 concepts × 3 resolutions | 500-way SigLIP Top-1, VLM judge |
@@ -33,6 +37,33 @@ visual supervision for Molmo2 and Qwen3-VL.
 
 The benchmark data and saved predictions are included in `data/`. No dataset download
 or Git LFS is needed for PixelBench. Training corpora and model weights are separate.
+
+<details>
+<summary><strong>Explore benchmark results</strong> — generation, understanding, and resolution scaling</summary>
+
+### Text-to-pixel
+
+![Text-to-pixel examples and 500-way SigLIP Top-1 accuracy across models](assets/t2p.png)
+
+### Image-to-pixel
+
+![Image-to-pixel reconstructions and SigLIP similarity, with source images for comparison](assets/i2p.png)
+
+The generation scores above average 16², 32², and 64² results; example images show
+individual 32² outputs. See the [evaluation protocol](EVALUATION.md) for metric definitions.
+
+### Pixel understanding
+
+![Ten-choice image recognition from palette indices, measured across 600 questions](assets/understanding.png)
+
+### Resolution scaling
+
+![Model outputs at increasing pixel resolutions, showing detail improvements and generation failures](assets/scaling.png)
+
+The resolution sweep uses a separate 50-image subset. Explore the full interactive
+results on the [project page](https://haoquanzhang.github.io/pixelbench/).
+
+</details>
 
 ## Setup
 
@@ -125,7 +156,19 @@ OMP_NUM_THREADS=1 python -m pixelbench.baselines --method pia --output outputs/p
 `--method nearest` and `--method ssim` use median-cut quantization; every baseline has
 an eight-color budget. PIA uses SLIC in Lab space and area-weighted eight-means.
 
+<details>
+<summary><strong>View the GPT-6 Astra gallery</strong> — 18 examples at 32 × 32</summary>
+
+![Sixteen image-to-pixel reconstructions and two text-to-pixel generations by GPT-6 Astra, all at 32 × 32](assets/gallery-32x32.png)
+
+</details>
+
 ## Train with Pixel supervision
+
+![Pixel Reconstruction Tuning gains for Molmo2-4B on 16 visual understanding benchmarks](assets/prt.png)
+
+The chart shows the change from adding 2,000 PRT samples to 500k instruction pairs
+for Molmo2-4B, with a +0.6 average score change across the 16 benchmarks.
 
 | Setting | Instruction data | Added Pixel data | Steps | Effective batch |
 | --- | --- | --- | --- | --- |

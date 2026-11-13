@@ -1,5 +1,7 @@
 # Included data
 
+![PixelBench stores images as a small RGB palette and a grid of palette indices](../assets/representation.png)
+
 | File | Contents |
 | --- | --- |
 | `t2p.json` | 100 object concepts, fixed IDs and categories |

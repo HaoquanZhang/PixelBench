@@ -1,5 +1,10 @@
 # Pixel Reconstruction Tuning
 
+![Molmo2-4B score changes across 16 visual understanding benchmarks after adding Pixel Reconstruction Tuning data](../assets/prt.png)
+
+The example above adds 2,000 PRT samples to 500k instruction pairs for Molmo2-4B,
+yielding a +0.6 average score change across the 16 benchmarks.
+
 The configuration files define the paper's data amounts, initialization, optimization,
 and seeds. Qwen and Molmo2 use separate environments. Model training is launched
 explicitly; data preparation does not start a training run.
