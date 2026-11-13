@@ -1,10 +1,22 @@
-# PixelBench
+<h1 align="center">PixelBench</h1>
 
-**Can LLMs Understand and Generate Images Pixel by Pixel?**
+<h3 align="center">Can LLMs Understand and Generate Images Pixel by Pixel?</h3>
 
-Haoquan Zhang · Feiyang Liu · Juanxi Tian · Wanhua Li · Haodong Duan · Weiyang Liu
+<p align="center">
+  <a href="https://haoquanzhang.github.io/">Haoquan Zhang</a> ·
+  <a href="https://zaychikliu.github.io/">Feiyang Liu</a> ·
+  <a href="https://tianshijing.github.io/">Juanxi Tian</a> ·
+  <a href="https://li-wanhua.github.io/">Wanhua Li</a> ·
+  <a href="https://kennymckormick.github.io/">Haodong Duan</a> ·
+  <a href="https://wyliu.com/">Weiyang Liu</a>
+</p>
 
-[Project Blog](https://haoquanzhang.github.io/pixelbench/)
+<p align="center">
+  <a href="https://haoquanzhang.github.io/pixelbench/">Project Blog</a> ·
+  <a href="https://arxiv.org/abs/2611.02540">Paper</a> ·
+  <a href="https://huggingface.co/collections/haoquan03/pixel-reconstruction-tuning">Models</a> ·
+  <a href="https://x.com/Haoquan03/status/2117657081981685860">X Post</a>
+</p>
 
 ![Pixel generation at 16, 32, and 64 pixels](assets/teaser.png)
 
