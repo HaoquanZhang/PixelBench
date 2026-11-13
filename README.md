@@ -18,7 +18,7 @@
   <a href="https://x.com/Haoquan03/status/2117657081981685860">X Post</a>
 </p>
 
-![Pixel generation at 16, 32, and 64 pixels](assets/teaser.png)
+![Four 16 × 16 model-generated objects—mushroom, owl, cherry, and turtle—transitioning from colored pixels to palette index digits](assets/teaser.png)
 
 PixelBench evaluates image generation and understanding through ordinary text tokens.
 A model produces a small RGB palette and a grid of palette indices; rendering is a
